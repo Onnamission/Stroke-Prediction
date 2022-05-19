@@ -1,5 +1,13 @@
 # Stroke Prediction
 
+![Github Repo Release](https://img.shields.io/github/release-date/Onnamission/Stroke-Prediction)
+![Github Repo Build](https://img.shields.io/github/workflow/status/Onnamission/Stroke-Prediction/strokeprediction)
+![Github Repo Checks](https://badgen.net/github/checks/Onnamission/Stroke-Prediction/main)
+![Github Repo Size](https://img.shields.io/github/repo-size/Onnamission/Stroke-Prediction)
+![Github Repo License](https://img.shields.io/github/license/Onnamission/Stroke-Prediction)
+![Github Repo Download](https://img.shields.io/github/downloads/Onnamission/Stroke-Prediction/total)
+![Github Repo Star Req](https://img.shields.io/badge/%F0%9F%8C%9F-If%20Useful-BC4E99)
+
 Prediction of stroke using Support Vector Machine (SVM) and Decision Tree (DTREE).
 
 ## Tech Stack
