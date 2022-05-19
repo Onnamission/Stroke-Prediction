@@ -1,0 +1,31 @@
+name: strokeprediction
+on: [push]
+permissions:
+  contents: read
+jobs:
+  run:
+    runs-on: [ubuntu-latest]
+    container: docker://dvcorg/cml:latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Setup R
+        uses: r-lib/actions/setup-r@master
+        
+      - name: Setup dependencies
+        run: |
+          R -e 'system("sudo apt-get install libcurl4-openssl-dev")'
+          R -e 'system("sudo apt-get install libssl-dev")'
+          R -e 'system("sudo apt-get install libxml2-dev")'
+          R -e 'system("sudo apt-get install libnlopt-dev")'
+          R -e 'system("sudo apt install cmake")'
+          R -e 'system("sudo apt-get install libudunits2-dev")'
+          R -e 'install.packages("renv")' 
+          R -e 'renv::restore()'
+          
+      - name: Stroke Prediction
+        env: 
+          repo_token: ${{ secrets.GITHUB_TOKEN }} 
+        run: |
+          R -e 'renv::run("dtree.R")'
+          R -e 'renv::run("svm.R")'
