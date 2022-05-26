@@ -12,7 +12,7 @@ Prediction of stroke using Support Vector Machine (SVM) and Decision Tree (DTREE
 
 ## Tech Stack
 
-![Made With R](https://img.shields.io/badge/Made%20with-R-red?style=for-the-badge&logo=R)
+![Made With R](https://img.shields.io/badge/-r-165CAA?style=for-the-badge&labelColor=grey&logo=r&logoColor=white)
 
 ## About
 
@@ -100,10 +100,6 @@ Accuracy achieved using DTREE was 0.8803 or 88.03%. As the sampling was implemen
 ## ROC Curve DTREE
 
 ![DTREE ROC](Results/dtree_roc.png)
-
-## Support
-
-For support, find me 😂.
 
 ## Authors
 
